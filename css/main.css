@@ -1,0 +1,350 @@
+/*start global rules*/
+html {
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -o-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #fff0e0;
+    --main-color-alt: #ffcf9c;
+    --main-transition: all 0.3s ease-in-out;
+    --main-padding-top: 80px;
+    --main-padding-bottom: 80px;
+    --sections-background: #ECECEC;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*start header css*/
+.header nav ul li {
+    margin-left: 6px;
+}
+
+.header nav ul li:hover a {
+    background-color: #8787876a;
+    color: var(--main-color-alt);
+}
+
+.header .navbar-collapse {
+    flex-grow: 0;
+}
+
+.sub-links {
+    position: relative;
+    top: 55px;
+    background-color: #000000c1;
+    padding: 7px 0 7px 0;
+}
+
+.sub-links ul li a {
+    color: var(--main-color);
+}
+
+.sub-links ul li:hover a {
+    color: var(--main-color-alt);
+}
+
+/*end header css*/
+/*start slider css*/
+.slider {
+    position: relative;
+    top: 55px;
+}
+
+@media (max-width:767px) {
+    .slider .carousel-indicators {
+        display: none;
+    }
+
+    .slider .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+/*endt slider css*/
+/*start cards css*/
+.cards {
+    overflow: hidden;
+    text-align: center;
+}
+
+.cards h4 {
+    text-align: center;
+    padding-top: 9%;
+    padding-bottom: 5%;
+}
+
+@media (max-width:767px) {
+    .cards h4 {
+        position: relative;
+        padding-top: 25%;
+        padding-bottom: 10%;
+    }
+}
+
+.cards .card {
+    border: 2px solid var(--main-color);
+    flex-grow: 1;
+    margin: 15px
+}
+
+@media (max-width:767px) {
+    .cards .card {
+        margin: 0;
+    }
+}
+
+.cards .card>img {
+    max-width: 35%;
+    margin: auto;
+}
+
+.cards .card .card-body {
+    flex: initial;
+}
+
+.cards .card .card-body p {
+    font-size: 15px;
+    color: #777;
+    padding: 5px 0 5px 0;
+}
+
+.cards .card .card-footer {
+    background-color: var(--main-color);
+}
+
+.cards .card button {
+    padding: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cards .card button:disabled {
+    cursor: not-allowed;
+}
+
+.cards .card span {
+    padding: 10px;
+    border: none;
+}
+
+#alert {
+    position: fixed;
+    top: 150px;
+    width: 100%;
+    z-index: 9999;
+}
+
+#successReg,
+#successLog,
+#wrongLog {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+}
+
+#alert2 {
+    width: 100%;
+}
+#wrongReg{
+    display: none
+}
+
+/*end cards css*/
+/*start back to top css*/
+.back-top {
+    background-color: #000000c1;
+    padding: 7px 0 7px 0;
+    margin-top: 20px;
+}
+
+.back-top ul li a {
+    color: var(--main-color);
+}
+
+.back-top:hover {
+    background-color: #1d1d1dc1;
+}
+
+.back-top:hover ul li a {
+    color: var(--main-color-alt);
+}
+
+/*start login css*/
+.login {
+    padding-top: 10%;
+}
+
+@media (max-width:767px) {
+    .login {
+        padding-top: 25%;
+    }
+}
+
+/*end login css*/
+/*end back to top css*/
+/*start footer css*/
+.footer {
+    background-color: #191919;
+    padding: 70px 0 0;
+}
+
+@media (max-width:991px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer .container .box h3 {
+    color: white;
+    font-size: 50px;
+    margin: 0 0 20px;
+    font-weight: bold;
+}
+
+.footer .container .box .social {
+    display: flex;
+}
+
+@media (max-width:991px) {
+    .footer .container .box .social {
+        justify-content: center;
+    }
+}
+
+.footer .container .box .social li {
+    margin-right: 10px;
+}
+
+.footer .container .box .social li a {
+    background-color: #313131;
+    color: #B9B9B9;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    transition: var(--main-transition);
+}
+
+.footer .container .box .social .facebook:hover {
+    background-color: #1877f2;
+    color: white;
+}
+
+.footer .container .box .social .youtube:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+.footer .container .box .social .twitter:hover {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.footer .container .box .text {
+    line-height: 2;
+    color: var(--main-color-alt);
+}
+
+.footer .container .box .links li {
+    padding: 15px 0;
+    transition: var(--main-transition);
+
+}
+
+.footer .container .box .links li:not(:last-child) {
+    border-bottom: 1px solid #444;
+}
+
+.footer .container .box .links li:hover {
+    padding-left: 15px;
+}
+
+.footer .container .box .links li a {
+    color: var(--main-color-alt);
+    transition: var(--main-transition);
+}
+
+.footer .container .box .links li:hover a {
+    color: var(--main-color-alt);
+}
+
+.footer .container .box .links li a::before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\F101";
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--main-color);
+}
+
+.footer .container .box .line {
+    display: flex;
+    align-items: center;
+    color: var(--main-color-alt);
+    margin-bottom: 30PX;
+}
+
+@media (max-width:991px) {
+    .footer .container .box .line {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+}
+
+.footer .container .box .line i {
+    font-size: 23px;
+    color: var(--main-color);
+    margin-right: 10px;
+}
+
+.footer .container .box .line .info {
+    line-height: 1.7;
+    flex: 1;
+}
+
+.footer .container .box .line .info>span {
+    display: block;
+}
+
+.footer .container .footer-gallary img {
+    max-width: 25%;
+    padding: 3px;
+    border: 1px solid var(--main-color);
+}
+
+.footer .me {
+    padding: 15px 0 15px 0;
+    color: var(--main-color-alt);
+    margin: 30px 0 0 0;
+    border-top: 2px solid var(--main-color-alt);
+    display: block;
+    text-align: center;
+}
+
+.footer .me a {
+    color: var(--main-color);
+}
+
+/*end footer css*/

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | LogIn</title>
+    <!-- Bootstrap 5 CSS File-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Font Awesome CSS File-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Project CSS File-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body">
+    <!--start header-->
+    <div class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #fff0e0;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imgs/Amazon_logo.svg.png" alt="" width="80" height="22">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <button disabled type="button" class="nav-link btn position-relative">
+                                <i class="fa-solid fa-warehouse"></i>
+                                LogIn Information
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--end header-->
+    <!--start login -->
+    <section class="login text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center">Log In to Your Account</h2>
+                    <div class="contact-data">
+                        <form method="get">
+                            <div class="form-group">
+                                <div id="wrongLog" class="alert alert-danger" role="alert">Email Address or Password is Incorrect!
+                                </div>
+                                <input id="emailInput" type="text" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <input id="passwordInput" type="Password" class="form-control" placeholder="Enter Your Password">
+                            </div>
+                        </form>
+                        <button onclick="logIn()" class="btn btn-danger">Log In</button>
+                        <a href="/register.html" class="d-block">New to Amazon? Create an Account</a>
+                        <div id="successLog" class="alert alert-success" role="alert">You've Logged in Successfully</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end login-->
+    <!--Start Footer Section-->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>Amazon</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet, cumque dolorem, magnam
+                    perferendis nemo fuga illum quibusdam nostrum corporis possimus quas minima voluptatem quisquam
+                    ullam quae id dolorum hic.
+                </p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><a href="#">Important Link 1</a></li>
+                    <li><a href="#">Important Link 2</a></li>
+                    <li><a href="#">Important Link 3</a></li>
+                    <li><a href="#">Important Link 4</a></li>
+                    <li><a href="#">Important Link 5</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">Suez, Egypt</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 12:00 PM</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+201067879542</span>
+                        <span>+2010XXXXXXX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="me">
+            <p class="copy">Copyright &copy; 2022 All Rights Reserved</p>
+            Coded by <a href="https://www.facebook.com/AhmedddAshraf/">Ahmed Ashraf Muhammed</a>
+        </div>
+    </div>
+    <!--End Footer Section-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    </body>
+
+</html>
